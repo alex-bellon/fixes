@@ -12,3 +12,5 @@ popd # navigate through directory stack
 !$ # use previous argument
 
 CTRL+L # clear screen
+
+watch 'tail /path/to/log' # monitor changed in output of a command
