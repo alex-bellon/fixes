@@ -2,6 +2,8 @@
 # Commands ##########################################
 #####################################################
 
+cat -A # cat and print out end lines, tabs, etc.
+
 cd - # change to previous directory
 
 echo foo{1,2,3}.txt # prints foo1.txt foo2.txt foo3.txt
@@ -12,6 +14,9 @@ pushd
 popd # navigate through directory stack
 
 sudo !! # re-run previous command with sudo
+sudo -l # list commands you can run as sudo
+
+tr -d "\n" # delete newline characters
 
 watch 'tail /path/to/log' # monitor changed in output of a command
 
