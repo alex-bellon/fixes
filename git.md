@@ -7,7 +7,7 @@ git blame -L 123,123 path/to/file
 ```
 #### By term
 ```shell
-git log -S 'search term'
+git log -S 'search term' (-- file)
 ```
 
 ### Remove files that are now in the `.gitignore`
