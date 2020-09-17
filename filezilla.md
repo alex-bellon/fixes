@@ -1,0 +1,5 @@
+# FileZilla
+
+## Add SSH Keys
+
+`Edit > Settings > Connection > SFTP` then add your private key.
