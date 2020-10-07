@@ -11,6 +11,7 @@ yay tllocalmgr-git
 ```
 tllocalmgr
 > install <package>
+> texhash
 ```
 
 ## LaTeX in Atom
