@@ -3,7 +3,15 @@
 ## Installing on Arch
 ```
 sudo pacman -S texlive-core
-yay texlive-localmanager-git
+yay tllocalmgr-git
+```
+
+## Installing packages
+
+```
+tllocalmgr
+> install <package>
+> texhash
 ```
 
 ## LaTeX in Atom
