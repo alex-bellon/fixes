@@ -1,0 +1,20 @@
+# Streaming audio through the Discord Linux client
+
+Note that this will have your computer audio streaming through your microphone. This means that everyone will be forced to hear the computer audio, not just people watching your stream. If they don't want to hear it they'll have to mute you. 
+
+- Install `paprefs`
+- Run `paprefs` and setup a virtual output device for simultaneous output to both headphones and HDMI
+  - Check the checkbox for "Simultaneous Output" > "Add virtual output device for ..."
+- Create an audio sink with with two loopbacks
+  - `pactl load-module module-null-sink sink_name=my_sink`
+  - `pactl load-module module-loopback sink=my_sink latency_msec=1`
+  - `pactl load-module module-loopback sink=my_sink latency_msec=1`
+- Reroute the audio in the "Volume Control" program (`pavucontrol`)
+  - In "Playback" change the destination of the game audio to "Simultaneous output to Built-in..."
+  - In "Recording" change the sources of the two sink loopbacks to "Monitor of Built-in Audio Digital Stereo (HDMI)" and "Built-in Audio Analog Stereo" (the internal microphone, or you can instead use an external microphone)
+    - Also unmute them both
+  - In "Recording" change the source of the for the "WEBRTC VoiceEngine" device (Discord's audio input) to "Monitor of Null Output" (the sink)
+    - Note that you must have already joined the voice channel for this device to show up
+    - If it isn't already by default, in the "Playback" tab set the "WEBRTC VoiceEngine" device (Discord's audio output) to output to "Built-in Audio Analog Stereo"
+
+[Source](https://www.reddit.com/r/discordapp/comments/g4kd8o/streaming_game_audio_on_linux_client/)
