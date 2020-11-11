@@ -6,6 +6,8 @@ cat -A # cat and print out end lines, tabs, etc.
 
 cd - # change to previous directory
 
+cp -al dirA dirB # hardlink copy a directory
+
 echo foo{1,2,3}.txt # prints foo1.txt foo2.txt foo3.txt
 
 git checkout - # change to previous branch
