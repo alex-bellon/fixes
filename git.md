@@ -10,6 +10,11 @@ git blame -L 123,123 path/to/file
 git log -S 'search term' (-- file)
 ```
 
+### Pull changes from master into branch
+```shell
+git pull origin master
+```
+
 ### Remove files that are now in the `.gitignore`
 ```shell
 git rm -r --cached .
