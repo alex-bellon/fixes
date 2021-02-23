@@ -1,5 +1,12 @@
 # LaTeX
 
+## Inline code
+- Use the `listings` LaTeX package to input inline code
+  - Use `\begin{lstlisting}` and `\end{lstlisting}` and put code in between or,
+  - Use `\lstinputlisting[language=foo]{bar.foo}` to input it directly from the file `bar.foo`
+
+_[Source](https://www.overleaf.com/learn/latex/code_listing)_
+
 ## Installing on Arch
 ```
 sudo pacman -S texlive-core
