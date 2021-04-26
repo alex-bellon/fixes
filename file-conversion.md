@@ -11,3 +11,8 @@ convert image.png out.pdf
 ```
 convert file.gif frame.png
 ```
+
+## Text to hex
+```
+echo 'hello' | xxd -
+```
