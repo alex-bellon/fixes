@@ -1,4 +1,6 @@
-# `error: unknown filesystem, grub rescue`
+# grub
+
+## `error: unknown filesystem, grub rescue`
 
 Usually can be fixed by changing from RAID to AHCI operation in the Disk Operation settings of BIOS.
 
@@ -13,7 +15,7 @@ normal
 
 [Source](https://askubuntu.com/questions/142300/how-to-fix-error-unknown-filesystem-grub-rescue)
 
-## Permanent fix
+### Permanent fix
 
 After boot Linux/Ubuntu based OS will load then open a terminal and write the command:
 
@@ -31,3 +33,15 @@ after these operation now finally reboot your system.
 
 
 [Source](https://askubuntu.com/questions/867519/grub-rescue-setting-boot-and-prefix-again-and-again)
+
+## Hide output from GRUB
+
+In `/etc/default/grub` add:
+```shell
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+```
+Then run `sudo update-grub`.
+
+## Play music on boot
+
+- [ArchWiki](https://wiki.archlinux.org/title/GRUB/Tips_and_tricks#Play_a_tune)

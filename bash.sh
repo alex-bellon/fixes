@@ -31,6 +31,8 @@ wget -r -np -nH --cut-dirs=3 -R index.html http://hostname/aaa/bbb/ccc/ddd/
 #  but to ddd by omitting first 3 folders aaa, bbb, ccc (--cut-dirs=3)
 #  excluding index.html files (-R index.html)
 
+whereis latex # find location of binary
+
 !$ # use previous argument
 
 #####################################################
