@@ -33,6 +33,8 @@ wget -r -np -nH --cut-dirs=3 -R index.html http://hostname/aaa/bbb/ccc/ddd/
 
 whereis latex # find location of binary
 
+xdotool key Caps_Lock # toggle Caps Lock through terminal
+
 !$ # use previous argument
 
 #####################################################
