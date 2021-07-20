@@ -12,6 +12,11 @@ convert image.png out.pdf
 convert file.gif frame.png
 ```
 
+## JPG to PNG
+```
+mogrify -format png pic.jpg
+```
+
 ## Text to hex
 ```
 echo 'hello' | xxd -
