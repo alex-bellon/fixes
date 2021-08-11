@@ -18,6 +18,8 @@ popd # navigate through directory stack
 sudo !! # re-run previous command with sudo
 sudo -l # list commands you can run as sudo
 
+sudo timedatectl set-timezone America/New_York # Set timezone
+
 tr -d "\n" # delete newline characters
 
 watch 'tail /path/to/log' # monitor changed in output of a command
