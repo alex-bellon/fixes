@@ -1,0 +1,3 @@
+# No icons in Thunar
+
+- Change theme in `lxappearance`
