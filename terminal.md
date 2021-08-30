@@ -38,6 +38,20 @@ if [ "$TMUX" = "" ]; then tmux; fi
 ### Highlight and select text
 Hold shift while selecting text
 
+### Highlighting across panes
+- [Issue -  Copying text with panes in a vertical split #2096](https://github.com/tmux/tmux/issues/2096)
+
+> Huh copy/paste works fine with vertical splits. Just setup tmux to sync your tmux clipboard with your regular x (or osx if you're into that kind of thing) clipboard.
+>
+> You mean selecting text with a mouse on a vertical split? If so get tmux upgraded to 1.8+ then prefix-z and you can temporarily zoom the window to full screen.
+>
+> Your information on tmux is highly out of date.
+>
+> Also prefix-alt-2 will move to horizontal layout of panes.
+
+[Source](https://news.ycombinator.com/item?id=7758368)
+
+
 ### Home and End keys don't work
 Add to `.zshrc`:
 
