@@ -12,6 +12,8 @@ echo foo{1,2,3}.txt # prints foo1.txt foo2.txt foo3.txt
 
 git checkout - # change to previous branch
 
+grep -r -i --include=\*.txt 'searchterm' ./ # search with file extension
+
 localectl set-locale LC_TIME=en_GB.UTF-8 # set to 24h time
 
 pushd
