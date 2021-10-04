@@ -8,6 +8,7 @@
 - [Mathpix Snip](https://mathpix.com/)
 - [Quiver](https://q.uiver.app/) - Commutative diagram editor
 - [Writespace](https://www.writespace.app/) - online Markdown and TeX renderer
+- [Tufte-book style](https://ctan.math.washington.edu/tex-archive/macros/latex/contrib/tufte-latex/sample-book.pdf)
 
 ## Inline code
 - Use the `listings` LaTeX package to input inline code
