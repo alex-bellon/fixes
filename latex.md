@@ -18,6 +18,7 @@
 _[Source](https://www.overleaf.com/learn/latex/code_listing)_
 
 ## Installing on Arch
+[TeX Live](https://wiki.archlinux.org/title/TeX_Live)
 ```
 sudo pacman -S texlive-core
 yay tllocalmgr-git
