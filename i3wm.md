@@ -21,3 +21,16 @@ workspace $wksp10 output $monitor_right
 ```
 
 - [Source](https://destinmoulton.com/blog/2019/i3-config-tip-assign-workspaces-to-monitors/)
+
+## Set screen timeout
+
+You can disable the screen saver feature with:
+```shell
+xset s off
+```
+The power saving feature can be turned off with
+```shell
+xset -dpms
+```
+With these settings the screen should no longer turn off or blank automatically until you reboot your machine.
+- [Source](https://askubuntu.com/questions/763994/screen-times-out-in-i3-wm)

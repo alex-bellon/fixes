@@ -1,4 +1,24 @@
-# WiFi
+# Internet
+
+## Detect physical ethernet cable plugged in
+You want to look at the nodes in
+```
+/sys/class/net/
+```
+I experimented with mine:
+
+Wire Plugged in:
+```
+eth0/carrier:1
+eth0/operstate:unknown
+```
+Wire Removed:
+```
+eth0/carrier:0
+eth0/operstate:down
+```
+[Source](https://stackoverflow.com/questions/808560/how-to-detect-the-physical-connected-state-of-a-network-cable-connector)
+
 
 ## Get hardware information about wifi card
 ```shell
