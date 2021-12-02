@@ -21,6 +21,3 @@ workspace $wksp10 output $monitor_right
 ```
 
 - [Source](https://destinmoulton.com/blog/2019/i3-config-tip-assign-workspaces-to-monitors/)
-
-## Set screen timeout
-
