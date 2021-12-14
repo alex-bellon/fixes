@@ -22,6 +22,8 @@ popd # navigate through directory stack
 sudo !! # re-run previous command with sudo
 sudo -l # list commands you can run as sudo
 
+sudo system config printer # open GUI printer settings
+
 sudo timedatectl set-timezone America/New_York # Set timezone
 
 tr -d "\n" # delete newline characters
