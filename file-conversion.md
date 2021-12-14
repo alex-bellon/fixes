@@ -13,6 +13,10 @@ chm2pdf OPTIONS FILENAME.CHM FILENAME.PDF
 convert file.gif frame.png
 ```
 
+## Hex to Binary
+- [Tutorial](https://stackpointer.io/unix/unix-linux-create-binary-file-hex-dump/519/)
+  - [Tutorial specifically for ARM](https://stackoverflow.com/questions/26961795/converting-from-hex-to-bin-for-arm-on-linux)
+
 ## Image to PDF
 
 ```
