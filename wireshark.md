@@ -11,3 +11,7 @@ tshark -r trace1.pcap -Tfields -e frame.number -e ip.src -e ip.dst -e data.data 
 ```shell
 sudo gpasswd -a $USER wireshark
 ```
+
+## Adding extensions
+
+Add files to `/usr/lib/wireshark/extcap`
