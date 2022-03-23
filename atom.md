@@ -6,6 +6,11 @@
 
 [Source](https://discuss.atom.io/t/why-keybindingsctrl-alt-up-down-not-work/19822/6)
 
+## Manually install package
+- Clone from GitHub
+- Navigate to directory
+- `apm link`
+
 ## Scroll past bottom
 
 - Check box in Editor settings

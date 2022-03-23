@@ -28,6 +28,15 @@ git add .
 git commit -m "Removing all files in .gitignore"
 ```
 
+### Rename git branch
+```shell
+git branch -m <new-name>
+git push origin -u <new-name>
+git checkout <old-name>
+```
+
+[Source](https://linuxize.com/post/how-to-rename-local-and-remote-git-branch/)
+
 ### Undo a commit without undoing changes
 ```shell
 git reset HEAD^

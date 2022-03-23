@@ -1,5 +1,14 @@
 # Pacman
 
+## local is newer than __
+
+```shell
+sudo pacman-mirrors -f10
+sudo pacman -Syyuu
+```
+
+[Source](https://archived.forum.manjaro.org/t/whats-all-these-warrnings/79542)
+
 ## Offline installation
 ```bash
 pacman -U /root/Download/packagename.tar.gz
