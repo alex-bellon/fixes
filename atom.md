@@ -11,6 +11,9 @@
 - Navigate to directory
 - `apm link`
 
+## Publishing package not working: `Registering package in <repo> repository failed: That repo does not exist, isn't an atom package, or you do not have access`
+Rename branch to `master`, not `main`
+
 ## Scroll past bottom
 
 - Check box in Editor settings
