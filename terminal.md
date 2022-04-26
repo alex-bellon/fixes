@@ -65,7 +65,7 @@ bindkey  "^[[4~"   end-of-line
 tmux source-file ~/.tmux.conf
 ```
 
-## `'xterm-new': unknown terminal type`
+### `'xterm-new': unknown terminal type`
 
 ```shell
 # Run the following commands on the local machine's bash prompt
@@ -74,3 +74,9 @@ source ~/.bashrc
 ```
 
 [Source](https://stackoverflow.com/questions/27052587/xterm-new-unknown-terminal-type)
+
+### Setting `$TERM`
+
+When running tmux then you must use `TERM=screen`, `TERM=tmux`, or one of the derivatives e.g. `TERM=screen-256color` or TERM=`tmux-256color`.
+
+[Source](https://unix.stackexchange.com/questions/484775/screen-and-kitty-what-should-term-be)
