@@ -16,6 +16,16 @@ git blame -L 123,123 path/to/file
 git log -S 'search term' (-- file)
 ```
 
+### Merge main into branch
+```shell
+git checkout main
+git pull
+git checkout validator
+git merge main
+git push
+```
+[Source](https://www.togaware.com/linux/survivor/Git_Merge_Master_into.html)
+
 ### Pull changes from master into branch
 ```shell
 git pull origin master
