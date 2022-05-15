@@ -6,6 +6,19 @@
 
 [Source](https://discuss.atom.io/t/why-keybindingsctrl-alt-up-down-not-work/19822/6)
 
+## Completely Uninstall
+
+```
+sudo rm /usr/local/bin/atom
+sudo rm /usr/local/bin/apm
+rm -rf ~/atom
+rm -rf ~/.atom
+rm -rf ~/.config/Atom-Shell
+sudo rm -rf /usr/local/share/atom/
+```
+
+[Source](https://stackoverflow.com/questions/23621181/how-to-uninstall-atom-text-editor-on-linux)
+
 ## Manually install package
 - Clone from GitHub
 - Navigate to directory

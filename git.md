@@ -6,6 +6,12 @@ git remote set-url origin new.git.url/here
 ```
 [Source](https://stackoverflow.com/questions/2432764/how-to-change-the-uri-url-for-a-remote-git-repository)
 
+### Copy commits from one branch to another
+```shell
+git cherry-pick <commit>
+```
+[Source](https://stackoverflow.com/questions/2474353/how-to-copy-commits-from-one-branch-to-another)
+
 ### Find which commit something was changed in
 #### By line
 ```shell
