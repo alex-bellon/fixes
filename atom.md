@@ -24,6 +24,13 @@ sudo rm -rf /usr/local/share/atom/
 - Navigate to directory
 - `apm link`
 
+## Open file in existing Atom window
+
+```shell
+atom -a <filename>
+```
+[Source](https://askubuntu.com/questions/960391/how-to-open-file-in-existing-atom-process-from-console)
+
 ## Publishing package not working: `Registering package in <repo> repository failed: That repo does not exist, isn't an atom package, or you do not have access`
 Rename branch to `master`, not `main`
 
