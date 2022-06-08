@@ -6,6 +6,16 @@ git remote set-url origin new.git.url/here
 ```
 [Source](https://stackoverflow.com/questions/2432764/how-to-change-the-uri-url-for-a-remote-git-repository)
 
+### Clean up a fork and restart from upstream
+```shell
+git remote add upstream /url/to/original/repo
+git fetch upstream
+git checkout master
+git reset --hard upstream/master
+git push origin master --force 
+```
+[Source](https://stackoverflow.com/questions/9646167/clean-up-a-fork-and-restart-it-from-the-upstream)
+
 ### Copy commits from one branch to another
 ```shell
 git cherry-pick <commit>
