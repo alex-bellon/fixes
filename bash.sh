@@ -2,6 +2,8 @@
 # Commands ##########################################
 #####################################################
 
+alias # List aliases
+
 cat -A # cat and print out end lines, tabs, etc.
 
 cd - # change to previous directory
