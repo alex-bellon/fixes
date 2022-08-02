@@ -66,3 +66,6 @@ export HISTTIMEFORMAT="%Y-%m-%dT%H:%M:%S "
 # enough to record years upon years of history
 export HISTFILESIZE=500000000
 export HISTSIZE=50000000
+
+# Delete lines beginning with pmid in a.bib
+sed -i '/^\s*pmid/d' a.bib
