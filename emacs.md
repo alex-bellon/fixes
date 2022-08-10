@@ -12,8 +12,8 @@
 ### How to migrate Markdown files to Emacs org mode
 
 ```shell
-for f in `ls *.md`; do 
-  pandoc --wrap=preserve -f markdown -t org ${f} | sed -E "/^[[:blank:]]*:/d" > ${f}.org; 
+for f in `*.md`; do 
+  pandoc --wrap=preserve -f markdown -t org ${f} | sed -E "/^[[:blank:]]*:/d" > ${f%%.md}.org; 
 done
 ```
 
