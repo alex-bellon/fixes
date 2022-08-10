@@ -1,0 +1,8 @@
+* Libinput
+** Libinput gestures failed to start
+#+begin_example
+sudo gpasswd -a $USER input
+newgrp input
+#+end_example
+
+[[https://atlassc.net/2021/08/07/libinput-gestures-failed-to-start-as-a-desktop-application/][Source]]

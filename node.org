@@ -1,0 +1,9 @@
+* Node
+** Update Node.js to latest version
+#+begin_example
+npm cache clean -f
+npm install -g n
+sudo n [stable | latest | [version.number]]
+#+end_example
+
+[[https://phoenixnap.com/kb/update-node-js-version][Source]]

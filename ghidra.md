@@ -1,7 +1,0 @@
-# Ghidra
-
-## Connect to Ghidra Server
-
-From the Project View, File -> New Project -> Shared Project. Enter your server information. As described earlier, you can choose either an existing repository that you’ve been added to as a user, or create a new one. We want the latter.
-
-- [Source](https://byte.how/posts/collaborative-reverse-engineering/#how-do-i-pull-down-a-project-from-a-ghidra-server)

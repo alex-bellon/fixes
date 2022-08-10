@@ -1,0 +1,13 @@
+* Natural Scrolling
+#+begin_example
+→ vim /etc/X11/xorg.conf.d/30-touchpad.conf 
+#+end_example
+
+Add this:
+
+#+begin_example
+Section "InputClass"
+    Identifier "trackpad"
+    Option "NaturalScrolling" "true"
+EndSection
+#+end_example

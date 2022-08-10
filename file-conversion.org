@@ -1,0 +1,31 @@
+* File Conversion
+** CHM to PDF
+#+begin_example
+chm2pdf OPTIONS FILENAME.CHM FILENAME.PDF
+#+end_example
+
+[[https://askubuntu.com/questions/706012/how-to-convert-this-chm-file-to-pdf][Source]]
+
+** GIF to Image frame
+#+begin_example
+convert file.gif frame.png
+#+end_example
+
+** Hex to Binary
+- [[https://stackpointer.io/unix/unix-linux-create-binary-file-hex-dump/519/][Tutorial]]
+  - [[https://stackoverflow.com/questions/26961795/converting-from-hex-to-bin-for-arm-on-linux][Tutorial specifically for ARM]]
+
+** Image to PDF
+#+begin_example
+convert image.png out.pdf
+#+end_example
+
+** JPG to PNG
+#+begin_example
+mogrify -format png pic.jpg
+#+end_example
+
+** Text to hex
+#+begin_example
+echo 'hello' | xxd -
+#+end_example

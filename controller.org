@@ -1,0 +1,43 @@
+* Controller
+** PS4 Controller
+*** Error running =ds4drv=
+#+begin_example
+configparser.DuplicateOptionError: While reading from '/etc/ds4drv.conf' [line 118]: option 'rel_wheelup' in section 'mapping:keyboard' already exists
+#+end_example
+
+To fix, remove the duplicated lines on 118 from the following file:
+
+#+begin_example
+sudo vim /etc/ds4drv.conf
+#+end_example
+
+[[https://github.com/chrippa/ds4drv/issues/63][Source]]
+
+*** HIDraw mode doesn't work on =ds4drv=
+#+begin_example
+[info][controller 1] Created devices /dev/input/js1 (joystick) /dev/input/event16 (evdev)
+[info][hidraw] Scanning for devices
+[info][hidraw] Scanning for devices
+[info][hidraw] Scanning for devices
+#+end_example
+
+To fix, change the following lines in =/usr/lib/python3.9/site-packages/ds4drv/backends/hidraw.py=:
+
+#+begin_src python
+HID_DEVICES = {
+    "Sony Computer Entertainment Wireless Controller": HidrawUSBDS4Device,
+    "Wireless Controller": HidrawBluetoothDS4Device,
+}
+#+end_src
+
+to
+
+#+begin_src python
+HID_DEVICES = {
+    "Sony Interactive Entertainment Wireless Controller": HidrawUSBDS4Device,
+    "Sony Computer Entertainment Wireless Controller": HidrawUSBDS4Device,
+    "Wireless Controller": HidrawBluetoothDS4Device,
+}
+#+end_src
+
+[[https://github.com/chrippa/ds4drv/issues/104][Source]]

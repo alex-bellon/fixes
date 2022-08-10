@@ -1,0 +1,13 @@
+* Vim
+*** Map Ctrl-Backspace to delete previous word
+Add to =.vimrc=:
+
+#+begin_example
+" Map Ctrl-Backspace to delete the previous word in insert mode.
+imap <C-BS> <C-W>
+#+end_example
+
+[[https://vim.fandom.com/wiki/Map_Ctrl-Backspace_to_delete_previous_word][Source]]
+
+*** Write as =sudo= when you opened the file without =sudo=
+=:w !sudo tee %=

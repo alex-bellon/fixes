@@ -1,0 +1,12 @@
+* Vagrant
+** Increase Memory And CPU On Vagrant Machine
+Add to the =Vagrantfile=
+
+#+begin_example
+config.vm.provider "virtualbox" do |v|
+  v.memory = 2048
+  v.cpus = 2
+end
+#+end_example
+
+[[https://ostechnix.com/how-to-increase-memory-and-cpu-on-vagrant-machine/][Source]]

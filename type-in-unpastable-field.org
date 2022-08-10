@@ -1,0 +1,11 @@
+* Type in Unpastable Field
+#+begin_example
+xclip -o | xdotool type --file - --window `wmctrl -l | awk '/- Mozilla Firefox/ {print $1}'`
+#+end_example
+
+- =xclip=: Read from clipboard and output to stdout.
+- =xdotool=: Read text from stdin (--file -) and send it to the window id (wmctrl lists ids of windows and awk will filter the one you need).
+- =wmctrl=: Lists window ids and title of the window.
+- =awk=: Find the matching line and get the first part of it (which is the id that looks like "0x02603d11").
+
+[[https://www.reddit.com/r/commandline/comments/qyzmes/are_there_any_scripts_to_paste_things_into/hlj8itg/?context=3][Source]]

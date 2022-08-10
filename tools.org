@@ -1,0 +1,5 @@
+* Tools
+- [[https://github.com/posva/catimg][catimg]] - Image printing in terminal
+- pavucontrol - Control audio input/output for Pulse Audio
+- [[https://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html][TLP]] - Power management tool
+- [[https://github.com/r-darwish/topgrade][topgrade]] - Upgrades OS and other package managers like Pip, NPM, etc.

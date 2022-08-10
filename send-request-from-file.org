@@ -1,0 +1,4 @@
+* Send a request from a file
+#+begin_example
+cat raw_request | ncat --ssl host 443
+#+end_example

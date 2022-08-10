@@ -1,0 +1,15 @@
+* Wireshark
+** Error exporting long data
+#+begin_example
+tshark -r trace1.pcap -Tfields -e frame.number -e ip.src -e ip.dst -e data.data > output.txt
+#+end_example
+
+[[https://osqa-ask.wireshark.org/questions/35468/export-packet-data-to-csv/][Source]]
+
+** Group add (Arch)
+#+begin_example
+sudo gpasswd -a $USER wireshark
+#+end_example
+
+** Adding extensions
+Add files to =/usr/lib/wireshark/extcap=

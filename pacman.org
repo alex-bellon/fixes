@@ -1,0 +1,22 @@
+* Pacman
+** local is newer than __
+#+begin_example
+sudo pacman-mirrors -f10
+sudo pacman -Syyuu
+#+end_example
+
+[[https://archived.forum.manjaro.org/t/whats-all-these-warrnings/79542][Source]]
+
+** Offline installation
+#+begin_src sh
+pacman -U /root/Download/packagename.tar.gz
+#+end_src
+
+[[https://wiki.archlinux.org/title/offline_installation_of_packages][Source]]
+
+** Program versions
+#+begin_src sh
+for prog in firefox i3-gaps gtk2 gtk3 xorg-server; do
+    pacman -Qi $prog | awk '/^Name/{name=$3} /^Version/{print name, $3}'
+done
+#+end_src

@@ -1,6 +1,0 @@
-# External Drive
-
-## Can't write to external drive because you don't have permissions
-
-- `id <user>` to get UID and GID
-- Add `UID=<uid>` and `GID=<gid>` to mount settings in Disks (or `fstab`)

@@ -1,0 +1,14 @@
+* Keyboard
+** Ctrl-Backspace and Ctrl-Delete in bash
+If you want Ctrl+Backspace to erase the previous sequence of alphanumeric characters, put the following line in your =.inputrc=:
+
+#+begin_example
+"\C-h": backward-kill-word
+#+end_example
+
+[[https://unix.stackexchange.com/questions/264791/ctrl-backspace-and-ctrl-delete-in-bash][Source]]
+
+** Update =xmodmap=
+#+begin_example
+xmodmap ~/.Xmodmap
+#+end_example

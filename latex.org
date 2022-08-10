@@ -1,0 +1,46 @@
+* LaTeX
+** Tools & Resources
+- [[https://github.com/gillescastel/latex-snippets][latex-snippets]] - Vim + LaTeX snippets setup
+- [[https://github.com/jleightcap/LaTeX-Templates][latex-templates]] - Personal LaTeX templates.
+- [[https://latex.vercel.app/][LaTeX.css]]
+- [[https://mmoredo.github.io/latex-color-converter/][LaTeX Color Converter]] - Convert HEX and RGB to LaTeX's xcolor
+- [[https://mathpix.com/][Mathpix Snip]]
+- [[https://q.uiver.app/][Quiver]] - Commutative diagram editor
+- [[https://www.writespace.app/][Writespace]] - online Markdown and TeX renderer
+- [[https://ctan.math.washington.edu/tex-archive/macros/latex/contrib/tufte-latex/sample-book.pdf][Tufte-book style]]
+
+** Inline code
+- Use the =listings= LaTeX package to input inline code
+  - Use =\begin{lstlisting}= and =\end{lstlisting}= and put code in between or,
+  - Use =\lstinputlisting[language=foo]{bar.foo}= to input it directly from the file =bar.foo=
+
+/[[https://www.overleaf.com/learn/latex/code_listing][Source]]/
+
+** Installing on Arch
+[[https://wiki.archlinux.org/title/TeX_Live][TeX Live]]
+
+#+begin_example
+sudo pacman -S texlive-core
+yay tllocalmgr-git
+#+end_example
+
+** Installing packages
+#+begin_example
+tllocalmgr
+> install <package>
+> texhash
+#+end_example
+
+** LaTeX in Atom
+*** Packages
+- latex
+- pdf-view
+- language-latex
+
+[[https://medium.com/@lucasrebscher/using-atom-as-a-latex-editor-93756de3d726][Source]]
+
+** Quantum
+*** Packages
+- =braket=
+- =qcircuit=
+- =xypic=

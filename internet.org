@@ -1,0 +1,46 @@
+* Internet
+** Detect physical ethernet cable plugged in
+You want to look at the nodes in
+
+#+begin_example
+/sys/class/net/
+#+end_example
+
+I experimented with mine:
+
+Wire Plugged in:
+
+#+begin_example
+eth0/carrier:1
+eth0/operstate:unknown
+#+end_example
+
+Wire Removed:
+
+#+begin_example
+eth0/carrier:0
+eth0/operstate:down
+#+end_example
+
+[[https://stackoverflow.com/questions/808560/how-to-detect-the-physical-connected-state-of-a-network-cable-connector][Source]]
+
+** Get hardware information about wifi card
+#+begin_example
+sudo lshw -C network
+#+end_example
+
+** Find out if wireless card supports 5GHz
+#+begin_example
+iwconfig
+iwlist <interface> freq
+#+end_example
+
+[[https://unix.stackexchange.com/questions/137894/how-do-i-find-out-if-my-wireless-card-supports-5-ghz][Source]]
+
+** WiFi not working after reboot
+#+begin_example
+→ nmcli c up WiFi
+Error: Connection activation failed: No suitable device found for this connection (device enp0s31f6 not available because profile is not compatible with device (mismatching interface name)).
+
+→ sudo systemctl restart NetworkManager.service
+#+end_example

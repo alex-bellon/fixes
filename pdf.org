@@ -1,0 +1,12 @@
+* PDF
+** Combine 2 PDFs
+#+begin_src sh
+pdfunite a.pdf b.pdf c.pdf d.pdf abcd.pdf
+#+end_src
+
+** Decompress
+- =qpdf --qdf --object-streams=disable orig.pdf uncompressed-qpdf.pdf=
+
+** PDF not rendering in browser/has blank pages
+- [[https://github.com/mozilla/pdf.js/issues/8260][PDF.js]] [[https://github.com/mozilla/pdf.js/issues/6741][issues]]
+- TL;DR: There's probably an embedded image that has huge dimensionsw
