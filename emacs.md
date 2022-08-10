@@ -13,7 +13,7 @@
 
 ```shell
 for f in `ls *.md`; do 
-  pandoc -f markdown -t org -o ${f}.org ${f}; 
+  pandoc --wrap=preserve -f markdown -t org ${f} | sed -E "/^[[:blank:]]*:/d" > ${f}.org; 
 done
 ```
 
