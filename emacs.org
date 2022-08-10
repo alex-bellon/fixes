@@ -1,14 +1,14 @@
 * Emacs
 - [[https://github.com/doomemacs/doomemacs/issues/408][conflicts of C-u and C-d with org-mode]]
 
-*** =file-missing Cannot open load file No such file or directory org-version.el=
+** =file-missing Cannot open load file No such file or directory org-version.el=
 #+begin_example
 /bin/doom build
 #+end_example
 
 [[https://github.com/doomemacs/doomemacs/issues/2089][Source]]
 
-*** How to migrate Markdown files to Emacs org mode
+** How to migrate Markdown files to Emacs org mode
 #+begin_src bash
 for f in *.md; do pandoc --wrap=preserve -f markdown -t org ${f} | sed -E "/^[[:blank:]]*:/d" > ${f%%.md}.org; done
 #+end_src
