@@ -8,6 +8,13 @@
 
 [[https://github.com/doomemacs/doomemacs/issues/2089][Source]]
 
+** Delete ~PROPERTIES~ drawers from Pandoc export
+#+BEGIN_SRC bash
+pandoc -t org file.md | sed -E "/^[[:space:]]+:/ d" > file.org
+#+END_SRC
+
+[[https://emacs.stackexchange.com/questions/31906/in-org-mode-a-function-to-delete-all-properties-drawers][Source]]
+
 ** How to migrate Markdown files to Emacs org mode
 #+begin_src bash
 for f in *.md; do pandoc --wrap=preserve -f markdown -t org ${f} | sed -E "/^[[:blank:]]*:/d" > ${f%%.md}.org; done

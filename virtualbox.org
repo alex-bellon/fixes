@@ -1,0 +1,9 @@
+* VirtualBox
+
+** No ~vboxconfig~
+
+#+BEGIN_SRC
+mhwd-kernel -li
+sudo pacman -Syu linux419-virtualbox-host-modules linux51-virtualbox-host-modules linux52-virtualbox-host-modules
+sudo vboxreload
+#+END_SRC

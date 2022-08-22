@@ -1,0 +1,6 @@
+* Pandoc
+
+** Export a file without ~PROPERTIES~ drawer
+#+BEGIN_SRC
+
+#+END_SRC

@@ -12,6 +12,8 @@ cp -al dirA dirB # hardlink copy a directory
 
 echo foo{1,2,3}.txt # prints foo1.txt foo2.txt foo3.txt
 
+find . -name "*.txt" -type f -delete # delete files (recursively) with .txt extension
+
 git checkout - # change to previous branch
 
 grep -r -i --include=\*.txt 'searchterm' ./ # search with file extension

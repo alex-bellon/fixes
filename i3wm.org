@@ -19,3 +19,10 @@ workspace $wksp10 output $monitor_right
 #+end_example
 
 - [[https://destinmoulton.com/blog/2019/i3-config-tip-assign-workspaces-to-monitors/][Source]]
+
+** Change i3wm scaling
+#+BEGIN_SRC bash
+xrandr --dpi 184
+#+END_SRC
+
+[[https://unix.stackexchange.com/questions/286337/unable-to-change-i3wm-scaling][Source]]
