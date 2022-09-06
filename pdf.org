@@ -9,4 +9,11 @@ pdfunite a.pdf b.pdf c.pdf d.pdf abcd.pdf
 
 ** PDF not rendering in browser/has blank pages
 - [[https://github.com/mozilla/pdf.js/issues/8260][PDF.js]] [[https://github.com/mozilla/pdf.js/issues/6741][issues]]
-- TL;DR: There's probably an embedded image that has huge dimensionsw
+- TL;DR: There's probably an embedded image that has huge dimensions
+
+** Split PDF
+#+BEGIN_SRC
+pdftk input.pdf cat 2-4 output out1.pdf
+#+END_SRC
+
+[[https://superuser.com/questions/345086/split-pdf-document-from-command-line-in-linux][Source]]

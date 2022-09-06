@@ -30,6 +30,14 @@ and see which command takes the most time.
 
 [[https://askubuntu.com/questions/717961/shell-very-slow-to-load-ubuntu-14-04][Source]]
 
+** Strange characters being pasted into terminal
+Turn off mouse tracking mode:
+#+begin_src
+reset
+#+end_src
+
+[[https://apple.stackexchange.com/questions/329785/when-i-click-on-my-terminal-strange-characters-appear#329807][Source]]
+
 ** =tmux=
 *** Have =tmux= start by default
 #+begin_example
