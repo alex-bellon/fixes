@@ -1,12 +1,12 @@
 * Git
-*** Change remote URL for a repository
+** Change remote URL for a repository
 #+begin_example
 git remote set-url origin new.git.url/here
 #+end_example
 
 [[https://stackoverflow.com/questions/2432764/how-to-change-the-uri-url-for-a-remote-git-repository][Source]]
 
-*** Clean up a fork and restart from upstream
+** Clean up a fork and restart from upstream
 #+begin_example
 git remote add upstream /url/to/original/repo
 git fetch upstream
@@ -17,25 +17,25 @@ git push origin master --force
 
 [[https://stackoverflow.com/questions/9646167/clean-up-a-fork-and-restart-it-from-the-upstream][Source]]
 
-*** Copy commits from one branch to another
+** Copy commits from one branch to another
 #+begin_example
 git cherry-pick <commit>
 #+end_example
 
 [[https://stackoverflow.com/questions/2474353/how-to-copy-commits-from-one-branch-to-another][Source]]
 
-*** Find which commit something was changed in
-**** By line
+** Find which commit something was changed in
+*** By line
 #+begin_example
 git blame -L 123,123 path/to/file
 #+end_example
 
-**** By term
+*** By term
 #+begin_example
 git log -S 'search term' (-- file)
 #+end_example
 
-*** Merge main into branch
+** Merge main into branch
 #+begin_example
 git checkout main
 git pull
@@ -46,19 +46,19 @@ git push
 
 [[https://www.togaware.com/linux/survivor/Git_Merge_Master_into.html][Source]]
 
-*** Pull changes from master into branch
+** Pull changes from master into branch
 #+begin_example
 git pull origin master
 #+end_example
 
-*** Remove files that are now in the =.gitignore=
+** Remove files that are now in the =.gitignore=
 #+begin_example
 git rm -r --cached .
 git add .
 git commit -m "Removing all files in .gitignore"
 #+end_example
 
-*** Rename git branch
+** Rename git branch
 #+begin_example
 git branch -m <new-name>
 git push origin -u <new-name>
@@ -67,7 +67,7 @@ git checkout <old-name>
 
 [[https://linuxize.com/post/how-to-rename-local-and-remote-git-branch/][Source]]
 
-*** Undo a commit without undoing changes
+** Undo a commit without undoing changes
 #+begin_example
 git reset HEAD^
 #+end_example
