@@ -1,0 +1,8 @@
+* Firewall
+
+** Only allow access on one port
+#+BEGIN_SRC
+sudo ufw default deny incoming
+sudo ufw allow 22/tcp
+sudo ufw enable
+#+END_SRC
