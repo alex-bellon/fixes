@@ -1,0 +1,10 @@
+* Firefox
+
+** Enable touch-scrolling
+Add to ~/etc/security/pam_env.conf~:
+
+#+begin_example
+ MOZ_USE_XINPUT2 DEFAULT=1
+#+end_example
+
+[[https://superuser.com/questions/1151161/enable-touch-scrolling-in-firefox][Source]]

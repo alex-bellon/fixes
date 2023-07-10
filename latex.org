@@ -9,6 +9,15 @@
 - [[https://www.writespace.app/][Writespace]] - online Markdown and TeX renderer
 - [[https://ctan.math.washington.edu/tex-archive/macros/latex/contrib/tufte-latex/sample-book.pdf][Tufte-book style]]
 
+** Indent sections of table
+Add
+#+begin_example
+\hspace{3mm}
+#+end_example
+to each row you want to indent
+
+[[https://tex.stackexchange.com/questions/359670/how-do-i-indent-text-within-a-tabular-environment][Source]]
+
 ** Inline code
 - Use the =listings= LaTeX package to input inline code
   - Use =\begin{lstlisting}= and =\end{lstlisting}= and put code in between or,
@@ -38,6 +47,56 @@ tllocalmgr
 - language-latex
 
 [[https://medium.com/@lucasrebscher/using-atom-as-a-latex-editor-93756de3d726][Source]]
+
+** Overflow table into next column
+#+begin_example
+\usepackage{supertabular}
+
+\begin{document}
+\twocolumn
+
+\begin{supertabular}{p{6cm} p{6cm}}
+   %table contents
+\end{supertabular}
+
+\end{document}
+#+end_example
+
+[[https://www.reddit.com/r/LaTeX/comments/erj3o8/how_do_i_get_my_table_to_overflow_to_the_next/][Source]]
+
+** Page-wide table in two-column mode
+#+begin_example
+\begin{table*}[t]
+  \centering
+  \begin{tabular}{lcr}
+    1 & 2 & 3 \\
+    4 & 5 & 6 \\
+    7 & 8 & 9
+  \end{tabular}
+  \caption{Blabla}
+  \label{tab:1}
+\end{table*}
+#+end_example
+
+[[https://tex.stackexchange.com/questions/89462/page-wide-table-in-two-column-mode][Source]]
+
+** Paragraph breaks with only line, no indent
+#+begin_example
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\baselineskip}
+#+end_example
+
+** Turn off page numbers
+#+begin_example
+\pagenumbering{gobble}
+#+end_example
+
+** URL not displayed for ~online~ entry
+#+begin_example
+\bibliographystyle{ACM-Reference-Format}
+#+end_example
+
+[[https://github.com/borisveytsman/acmart/issues/164][Source]]
 
 ** Quantum
 *** Packages

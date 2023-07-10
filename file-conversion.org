@@ -25,6 +25,11 @@ convert image.png out.pdf
 mogrify -format png pic.jpg
 #+end_example
 
+** Markdown to org-mode
+#+begin_example
+pandoc --wrap=preserve -f markdown -t org file.md | sed -E "/^[[:blank:]]*:/d" > file.org
+#+end_example
+
 ** Text to hex
 #+begin_example
 echo 'hello' | xxd -

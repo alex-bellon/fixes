@@ -57,6 +57,8 @@ CTRL+L # clear screen
 
 CTRL+R # search command history
 
+CTRL+Z + bg + disown # leave processes running after exiting SSH session
+
 #####################################################
 # Miscellaneous #####################################
 #####################################################

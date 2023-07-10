@@ -19,3 +19,11 @@ convert -flop input.png output.png
 #+end_example
 
 [[https://askubuntu.com/questions/1052899/how-to-mirror-image-files-via-command-line][Source]]
+
+** PCAP
+*** Concatenate two pcaps
+#+begin_example
+mergecap -a file_1.pcap file_1.pcap file_1.cap -w output_file.pcap
+#+end_example
+
+[[https://stackoverflow.com/questions/912843/how-to-concatenate-two-tcpdump-files-pcap-files][Source]]
