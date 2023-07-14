@@ -1,0 +1,23 @@
+* C
+
+** Check if library is installed
+#+BEGIN_EXAMPLE
+ldconfig -p | grep libjpeg
+#+END_EXAMPLE
+
+** Difference between =.so= and =.a=
+=.so= is a dynamic library (shared object), =.a= is a static library (archive)
+
+** Find library
+#+BEGIN_EXAMPLE
+ls -l usr/include/gimp-2.0/libgimp
+#+END_EXAMPLE
+Add =-I/usr/include/gimp-2.0= to compiler. Add =-lgimp-2.0= flag to linker. Then use ~#include <libgimp/gimp.h>~ in the C file
+
+** Print =ld= search path
+#+BEGIN_EXAMPLE
+ld --verbose | grep SEARCH_DIR | tr -s ' ;' \\012
+#+END_EXAMPLE
+
+** ~undefined reference to 'operator delete(void *)'~
+Add ~-lstdc++~ to compiler command
