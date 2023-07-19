@@ -86,6 +86,13 @@ tllocalmgr
 \setlength{\parskip}{\baselineskip}
 #+end_example
 
+** Times New Roman
+#+begin_example
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+#+end_example
+[[https://tex.stackexchange.com/questions/67768/times-new-roman-font][Source]]
+
 ** Turn off page numbers
 #+begin_example
 \pagenumbering{gobble}
