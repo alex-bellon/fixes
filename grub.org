@@ -1,4 +1,25 @@
 * grub
+
+** add Windows 10 to OS list
+Look at the UUID of your Windows 10 partition, for exemple:
+#+begin_src
+sudo blkid /dev/sda2
+#+end_src
+Then edit =/etc/grub.d/40_custom=, and at the end of the file add:
+#+begin_src
+menuentry "Windows 10" --class windows --class os {
+   insmod ntfs
+   search --no-floppy --set=root --fs-uuid $your_uuid_here$
+   ntldr /bootmgr
+}
+#+end_src
+Don't forget to change the UUID. And finally update your grub config file:
+#+begin_src
+sudo update-grub
+#+end_src
+
+[[https://askubuntu.com/questions/661947/add-windows-10-to-grub-os-list][source]]
+
 ** =error: unknown filesystem, grub rescue=
 Usually can be fixed by changing from RAID to AHCI operation in the Disk Operation settings of BIOS.
 
