@@ -1,4 +1,10 @@
 * GDB
+
 ** Install gef
 - Install gef through package manager
 - =pip install keystone-engine unicorn capstone ropper=
+
+** View assembly where you are
+#+begin_source
+layout asm
+#+end_source
