@@ -1,6 +1,22 @@
 * Emacs
 - [[https://github.com/doomemacs/doomemacs/issues/408][conflicts of C-u and C-d with org-mode]]
 
+** add attributes to latex command in org-mode
+#+BEGIN_SRC
+* table test 
+
+#+caption: My caption
+#+name:my-label
+#+ATTR_LATEX: :placement [h] :center t
+|    |                          |
+| id | Question                 |
+|----+--------------------------|
+|    |                          |
+|  1 | Does it export with [h]? |
+#+END_SRC
+
+[[https://stackoverflow.com/questions/44414584/how-to-export-a-org-mode-table-to-latex-with-the-correct-placement-h][source]]
+
 ** =file-missing Cannot open load file No such file or directory org-version.el=
 #+begin_example
 /bin/doom build
@@ -8,16 +24,31 @@
 
 [[https://github.com/doomemacs/doomemacs/issues/2089][Source]]
 
-** Delete ~PROPERTIES~ drawers from Pandoc export
+** delete ~PROPERTIES~ drawers from pandoc export
 #+BEGIN_SRC bash
 pandoc -t org file.md | sed -E "/^[[:space:]]+:/ d" > file.org
 #+END_SRC
 
 [[https://emacs.stackexchange.com/questions/31906/in-org-mode-a-function-to-delete-all-properties-drawers][Source]]
 
-** How to migrate Markdown files to Emacs org mode
+** how to migrate markdown files to emacs org mode
 #+begin_src bash
 for f in *.md; do pandoc --wrap=preserve -f markdown -t org ${f} | sed -E "/^[[:blank:]]*:/d" > ${f%%.md}.org; done
 #+end_src
 
 [[https://emacs.stackexchange.com/questions/5465/how-to-migrate-markdown-files-to-emacs-org-mode-format][Source]]
+
+** link a second-level heading in org-mode file
+#+BEGIN_SRC
+[[file:external-file.org::*second-level][description]]
+#+END_SRC
+
+[[https://stackoverflow.com/questions/33036132/how-to-link-to-second-level-heading-in-external-org-file][source]]
+
+** profile slow org-mode
+invoke the profiler twice to start/stop the profiler
+#+BEGIN_SRC
+SPC h T
+#+END_SRC
+
+[[https://github.com/doomemacs/doomemacs/issues/2118][source]]

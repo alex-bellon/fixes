@@ -1,0 +1,18 @@
+* SSH
+
+** set up SSH server
+#+BEGIN_SRC
+sudo apt install ufw openssh-server
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow ssh
+sudo systemctl enable ssh
+sudo systemctl start ssh
+#+END_SRC
+
+to only allow key authentication
+#+BEGIN_SRC
+sudo vim /etc/ssh/sshd_config
+#+END_SRC
+and set ~PasswordAuthentication~ to ~no~
+then restart the SSH service

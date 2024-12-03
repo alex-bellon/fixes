@@ -1,0 +1,9 @@
+* raspberry pi
+
+** disable screen blanking
+#+BEGIN_SRC
+sudo /etc/kbd/config
+BLANK_TIME=30
+#+END_SRC
+
+[[https://stackoverflow.com/questions/18270139/how-do-i-disable-screen-blanking-on-raspberry-pi][source]]

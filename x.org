@@ -1,8 +1,8 @@
 * X
-** Keep xrandr/arandr settings
+** keep xrandr/arandr settings
 You will note that arandr has the option somewhere in its menu system to save your current configuration as a shell script. Do that, then append the contents of the newly written file to the end of your =~/.xinitrc=.
 
-** Set screen timeout
+** set screen timeout
 You can disable the screen saver feature with:
 
 #+begin_example
@@ -16,6 +16,13 @@ xset -dpms
 #+end_example
 
 With these settings the screen should no longer turn off or blank automatically until you reboot your machine. - [[https://askubuntu.com/questions/763994/screen-times-out-in-i3-wm][Source]]
+
+** set default browser
+#+BEGIN_SRC
+xdg-settings set default-web-browser librewolf.desktop
+#+END_SRC
+
+[[https://forum.endeavouros.com/t/i3-default-browser-change/14381][source]]
 
 ** =xmodmap: please release the following keys=
 Put =xmodmap= in =.xinitrc= not =.bashrc=

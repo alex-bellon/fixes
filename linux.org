@@ -1,0 +1,13 @@
+* linux
+
+** run a command at login
+Add the command to the end of ~~/.profile~
+
+[[https://askubuntu.com/questions/270049/how-to-run-a-command-at-login][source]]
+
+** view all users with root permissions
+#+BEGIN_SRC
+getent passwd | cut -d : -f 1 | xargs groups
+#+END_SRC
+
+[[https://serverfault.com/questions/208347/how-do-i-list-all-superusers][source]]
