@@ -1,0 +1,10 @@
+* calibre
+
+** separate database file from book files
+since calibre does not play nice with hosting the database file on networked storage (concurrency issues), people suggest to host the db file locally and put the books on networked storage. 
+
+1. first set up calibre wherever you want your books to be
+2. close calibre
+3. move the db file to your new location (e.g. `~/calibre/calibre.db`)
+4. `export CALIBRE_OVERRIDE_DATABASE_PATH=~/calibre/calibre.db`
+5. restart calibre
