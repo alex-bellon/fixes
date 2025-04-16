@@ -17,6 +17,13 @@
 
 [[https://stackoverflow.com/questions/44414584/how-to-export-a-org-mode-table-to-latex-with-the-correct-placement-h][source]]
 
+** delete ~PROPERTIES~ drawers from pandoc export
+#+BEGIN_SRC bash
+pandoc -t org file.md | sed -E "/^[[:space:]]+:/ d" > file.org
+#+END_SRC
+
+[[https://emacs.stackexchange.com/questions/31906/in-org-mode-a-function-to-delete-all-properties-drawers][Source]]
+
 ** =file-missing Cannot open load file No such file or directory org-version.el=
 #+begin_example
 /bin/doom build
@@ -24,12 +31,17 @@
 
 [[https://github.com/doomemacs/doomemacs/issues/2089][Source]]
 
-** delete ~PROPERTIES~ drawers from pandoc export
-#+BEGIN_SRC bash
-pandoc -t org file.md | sed -E "/^[[:space:]]+:/ d" > file.org
+** format source code blocks in exported LaTeX
+add to ~init.el~
+
+#+BEGIN_SRC
+(setq org-latex-src-block-backend 'engraved)
+(setq org-latex-engraved-theme 'doom-one-light)  ;; Optional
 #+END_SRC
 
-[[https://emacs.stackexchange.com/questions/31906/in-org-mode-a-function-to-delete-all-properties-drawers][Source]]
+install the ~engraved-faces~ package
+
+[[https://blog.tecosaur.com/tmio/2022-05-31-folding.html#-engraved-source][source]]
 
 ** how to migrate markdown files to emacs org mode
 #+begin_src bash
