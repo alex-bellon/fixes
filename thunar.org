@@ -1,0 +1,7 @@
+** No image thumbnails
+Install ~tumbler~ package
+
+[[https://superuser.com/questions/258633/why-is-thunar-not-creating-and-showing-thumbnails-of-images][Source]]
+
+** No icons in Thunar
+Change theme in =lxappearance=
