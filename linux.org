@@ -11,3 +11,17 @@ getent passwd | cut -d : -f 1 | xargs groups
 #+END_SRC
 
 [[https://serverfault.com/questions/208347/how-do-i-list-all-superusers][source]]
+
+** ignore lid shutting (don't turn off screen when laptop is closed)
+
+#+BEGIN_SRC
+sudo vim /etc/systemd/logind.conf
+#+END_SRC
+
+and uncomment the line
+
+#+BEGIN_SRC
+HandleLidSwitch=ignore
+#+END_SRC
+
+Log out and log in to apply changes. Re-comment the line to enable it again.
