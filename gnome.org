@@ -1,0 +1,17 @@
+* GNOME
+
+** Set default terminal
+
+#+BEGIN_SRC
+sudo update-alternatives --config x-terminal-emulator
+#+END_SRC
+
+[[source][sudo update-alternatives --config x-terminal-emulator]]
+
+** Set Caps Lock to escape 
+
+#+BEGIN_SRC
+gsettings set org.gnome.desktop.input-sources xkb-options "['caps:escape']"
+#+END_SRC
+
+[[source][https://superuser.com/questions/1196241/how-to-remap-caps-lock-on-wayland]]
