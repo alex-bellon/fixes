@@ -64,3 +64,11 @@ SPC h T
 #+END_SRC
 
 [[https://github.com/doomemacs/doomemacs/issues/2118][source]]
+
+** icons now showing correctly
+
+#+BEGIN_SRC
+M-x nerd-icons-install-fonts
+#+END_SRC
+
+[[https://www.reddit.com/r/emacs/comments/166wgp4/alltheicons_fonts_not_showing_correctly_even/][source]]
